@@ -10,5 +10,7 @@
 
 @interface SignupViewController : UIViewController
 - (IBAction)backButton:(id)sender;
+- (IBAction)signupButton:(id)sender;
+
 
 @end

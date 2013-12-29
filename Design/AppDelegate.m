@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Lienne Nguyen. All rights reserved.
 //
 
-#define UIColorFromRGB(rgbValue, alphaValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:0.5]
+//#define UIColorFromRGB(rgbValue, alphaValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:alphaValue]
 
 #import "AppDelegate.h"
 
@@ -21,6 +21,17 @@
     pageControl.currentPageIndicatorTintColor = [UIColor darkGrayColor];
     pageControl.backgroundColor = [UIColor clearColor];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    for (NSString* family in [UIFont familyNames])
+    {
+        NSLog(@"%@", family);
+        
+        for (NSString* name in [UIFont fontNamesForFamilyName: family])
+        {
+            NSLog(@"  %@", name);
+        }
+    }
+    
     [self setCustomStyle];
     return YES;
 }
@@ -59,19 +70,40 @@
 }
 
 - (void) setCustomStyle {
-    
+    self.window.tintColor = UIColorFromRGB(0x495EFC,0.2);
     UIColor *barColor = UIColorFromRGB(0x495EFC,0.5);
     
     UIView *colorView = [[UIView alloc] initWithFrame:CGRectMake(0.f, -20.f, 320.f, 64.f)];
     colorView.opaque = NO;
     colorView.alpha = .5f;
     colorView.backgroundColor = barColor;
+    
+     UIFont* font = [UIFont fontWithName:@"LeagueGothic" size:32.0f];
+    
+    UIColor* textColor = [UIColor whiteColor];
+    NSDictionary *barTitleAttributes = @{ NSForegroundColorAttributeName : textColor,
+                             NSFontAttributeName : font,
+                             NSStrokeWidthAttributeName : [NSNumber numberWithFloat:-2.0],
+                             NSStrokeColorAttributeName : [UIColor lightGrayColor]
+                             };
+    
     [[[UINavigationBar appearance] layer] insertSublayer:colorView.layer above:0];
 
-    [[UINavigationBar appearance] setBarTintColor: barColor ];
-    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
-    [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setBarTintColor: barColor];
+    [[UINavigationBar appearance] setTintColor:textColor];
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleDefault];
+    [[UINavigationBar appearance] setTitleTextAttributes:barTitleAttributes];
+    [[UITabBar appearance] setBarTintColor:textColor];
+    
+    
+    
+    //segmented control
+    
+    [[UISegmentedControl appearance] setBackgroundColor:[UIColor whiteColor]];
+    NSDictionary *highlightedAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
+    [[UISegmentedControl appearance] setTitleTextAttributes:highlightedAttributes forState:UIControlStateSelected];
+
+
 
 }
 

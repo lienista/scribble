@@ -2,7 +2,7 @@
 //  MapViewController.m
 //  Design
 //
-//  Created by Lien Nguyen on 12/22/13.
+//  Created by Lienne Nguyen on 12/22/13.
 //  Copyright (c) 2013 Lienne Nguyen. All rights reserved.
 //
 
@@ -36,8 +36,12 @@
     _mapView.showsUserLocation = YES;
     
     
+    
 }
+-(void) viewWillAppear:(BOOL)animated {
 
+
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -96,7 +100,7 @@
 }
 
 
-- (IBAction)zoomIn:(id)sender {
+- (void)zoomIn:(id)sender {
     MKUserLocation *userLocation = _mapView.userLocation; MKCoordinateRegion region =
     MKCoordinateRegionMakeWithDistance ( userLocation.location.coordinate, 20000, 20000);
     [_mapView setRegion:region animated:NO];

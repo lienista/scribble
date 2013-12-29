@@ -2,7 +2,7 @@
 //  MapTableViewCell.m
 //  Design
 //
-//  Created by Lien Nguyen on 12/23/13.
+//  Created by Lienne Nguyen on 12/23/13.
 //  Copyright (c) 2013 Lienne Nguyen. All rights reserved.
 //
 

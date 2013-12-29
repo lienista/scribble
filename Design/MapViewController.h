@@ -2,7 +2,7 @@
 //  MapViewController.h
 //  Design
 //
-//  Created by Lien Nguyen on 12/22/13.
+//  Created by Lienne Nguyen on 12/22/13.
 //  Copyright (c) 2013 Lienne Nguyen. All rights reserved.
 //
 
