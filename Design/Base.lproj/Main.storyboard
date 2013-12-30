@@ -186,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gy3-yu-Bp4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-37" y="3598"/>
+            <point key="canvasLocation" x="91" y="4310"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="iv4-BF-6bb">
@@ -204,12 +204,12 @@
                     <navigationItem key="navigationItem" id="atR-Je-sBT"/>
                     <connections>
                         <segue destination="o2F-Li-lRb" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegue" id="tPb-xH-ua5"/>
-                        <segue destination="x3Y-Oe-hqH" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="zUX-rp-IhP"/>
+                        <segue destination="Zzk-0f-9cN" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="H1z-0U-twE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SXX-WG-DA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="416" y="3604"/>
+            <point key="canvasLocation" x="734" y="4324"/>
         </scene>
         <!--Map Table View Controller-->
         <scene sceneID="vrc-gq-RUJ">
@@ -1007,7 +1007,7 @@
             </objects>
             <point key="canvasLocation" x="1735" y="-354"/>
         </scene>
-        <!--Sidebar View Controller-->
+        <!--Sidebar View Controller - Item-->
         <scene sceneID="bqS-N8-5vU">
             <objects>
                 <tableViewController id="o2F-Li-lRb" customClass="SidebarViewController" sceneMemberID="viewController">
@@ -1127,7 +1127,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Zzk-0f-9cN" kind="custom" customClass="SWRevealViewControllerSegue" id="8i6-fG-iKe"/>
+                                    <segue destination="wSb-Bv-d0c" kind="custom" customClass="SWRevealViewControllerSegue" id="iwo-8Y-HKG"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="messages" id="mSa-PL-EFn">
@@ -1208,10 +1208,11 @@
                             <outlet property="delegate" destination="o2F-Li-lRb" id="r3J-vp-PKh"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="jhc-YL-vlw"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YcF-BD-aPi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="933" y="3296"/>
+            <point key="canvasLocation" x="1276" y="3622"/>
         </scene>
         <!--My Navigation Controller - Settings-->
         <scene sceneID="LTB-iy-JML">
@@ -1291,6 +1292,7 @@
         <!--My Tab Bar Controller-->
         <scene sceneID="oeR-Dr-Z95">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s8l-SW-haY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController definesPresentationContext="YES" id="Zzk-0f-9cN" customClass="MyTabBarController" sceneMemberID="viewController">
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="411-jB-KgB">
@@ -1299,14 +1301,13 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="wSb-Bv-d0c" kind="relationship" relationship="viewControllers" id="xV3-yZ-Vjt"/>
+                        <segue destination="xGn-fO-l45" kind="relationship" relationship="viewControllers" id="xV3-yZ-Vjt"/>
                         <segue destination="cbe-wP-UUm" kind="relationship" relationship="viewControllers" id="OXV-XG-oZX"/>
                         <segue destination="AcZ-cx-SoI" kind="relationship" relationship="viewControllers" id="zM3-hF-yll"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s8l-SW-haY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1269" y="4324"/>
+            <point key="canvasLocation" x="1276" y="4324"/>
         </scene>
         <!--View Controller - Settings-->
         <scene sceneID="77s-qd-yV8">
@@ -1325,7 +1326,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="neO-ag-dz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1750" y="5349"/>
+            <point key="canvasLocation" x="1818" y="5677"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OgU-GE-i8k">
@@ -1362,9 +1363,9 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hrg-et-2jn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1650" y="3614"/>
+            <point key="canvasLocation" x="378" y="3118"/>
         </scene>
-        <!--Neighbor Table View Controller - Neighbors-->
+        <!--Neighbor Table View Controller-->
         <scene sceneID="WeE-VH-rnN">
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="wSb-Bv-d0c" customClass="NeighborTableViewController" sceneMemberID="viewController">
@@ -1373,7 +1374,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NeighborCell" id="Icw-o1-9m2" customClass="NeighborCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NeighborCell" id="Icw-o1-9m2" customClass="NeighborCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Icw-o1-9m2" id="GVD-wK-ck1">
@@ -1395,7 +1396,6 @@
                             <outlet property="delegate" destination="wSb-Bv-d0c" id="EqE-ZA-ifO"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Neighbors" image="people.png" id="wM6-kC-HK5"/>
                     <navigationItem key="navigationItem" id="BBg-E0-XAT">
                         <barButtonItem key="leftBarButtonItem" image="menu.png" id="4to-pT-Otp"/>
                     </navigationItem>
@@ -1406,7 +1406,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6CB-DA-PhV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1808" y="4324"/>
+            <point key="canvasLocation" x="2334" y="4324"/>
         </scene>
         <!--Navigation Controller - Say something-->
         <scene sceneID="1JQ-6S-PBd">
@@ -1426,6 +1426,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JQw-6p-k4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1818" y="5008"/>
+        </scene>
+        <!--Navigation Controller - Neighbors-->
+        <scene sceneID="A4z-5p-pV2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xGn-fO-l45" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Neighbors" image="people.png" id="wM6-kC-HK5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ysp-BN-fq5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wSb-Bv-d0c" kind="relationship" relationship="rootViewController" id="RAC-t0-fGu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KiT-eE-WV9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808" y="4324"/>
         </scene>
     </scenes>
     <resources>
@@ -1456,6 +1475,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="f2C-0t-rBW"/>
         <segue reference="1yO-qa-hyB"/>
-        <segue reference="1V1-MX-aJe"/>
+        <segue reference="ibq-rc-Jpo"/>
+        <segue reference="iwo-8Y-HKG"/>
     </inferredMetricsTieBreakers>
 </document>

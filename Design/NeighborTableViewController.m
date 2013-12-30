@@ -42,6 +42,7 @@
     // Set the gesture
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 
+    self.navigationController.navigationItem.rightBarButtonItem = self.editButtonItem;
     
 }
 
