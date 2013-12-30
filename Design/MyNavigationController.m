@@ -52,6 +52,8 @@
      self.navigationController.navigationBar.translucent = NO;*/
     
     [self.navigationController.navigationBar.layer insertSublayer:colorView.layer atIndex:0];
+    
+    
 }
 
 

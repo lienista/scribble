@@ -7,6 +7,7 @@
 //
 
 #import "MyTabBarController.h"
+#import "NeighborTableViewController.h"
 
 @implementation MyTabBarController
 
@@ -18,5 +19,6 @@
 {
     return nil;
 }
+
 
 @end

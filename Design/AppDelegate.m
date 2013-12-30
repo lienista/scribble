@@ -34,6 +34,8 @@
 //    }
     
     [self setCustomStyle];
+    
+    
     return YES;
 }
 							
