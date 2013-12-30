@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 Lienne Nguyen. All rights reserved.
 //
 
-#define UIColorFromRGB(rgbValue, alphaValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:0.5]
-
 #import "MyNavigationController.h"
 
 @implementation MyNavigationController
@@ -23,7 +21,7 @@
 {
     [super viewDidLoad];
     
-    [self setCustomStyle];
+   // [self setCustomStyle];
 
     
 }
@@ -31,7 +29,7 @@
 - (void) viewDidAppear:(BOOL)animated
 {
     
-    [self setCustomStyle];
+    //[self setCustomStyle];
 }
 - (void) setCustomStyle {
     //UIColor *barColour = [UIColor colorWithRed:73.0/255.0f green:94.0/255.0f blue:252.0/255.0f alpha:1.00f];
@@ -56,13 +54,6 @@
     [self.navigationController.navigationBar.layer insertSublayer:colorView.layer atIndex:0];
 }
 
-- (UIBarPosition)positionForBar:(id <UIBarPositioning>)bar {
-    return UIBarPositionTopAttached;
-}
-
--(UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent;
-}
 
 
 @end

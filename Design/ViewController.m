@@ -5,7 +5,6 @@
 //  Created by Lienne Nguyen on 12/18/13.
 //  Copyright (c) 2013 Lienne Nguyen. All rights reserved.
 //
-#define UIColorFromRGB(rgbValue, alphaValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:0.5]
 
 #import "ViewController.h"
 #import "PageContentViewController.h"
@@ -36,7 +35,13 @@
     if([segue.identifier isEqualToString:@"loginButton"]){
         self.modalPresentationStyle = UIModalPresentationFullScreen;
         self.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-        NSLog(@"hello login screen");
+        NSLog(@"entered login screen");
+    }
+    
+    else if([segue.identifier isEqualToString:@"signupButton"]){
+        self.modalPresentationStyle = UIModalPresentationFullScreen;
+        self.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        NSLog(@"entered signup screen");
     }
     
 }

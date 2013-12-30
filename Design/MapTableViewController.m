@@ -13,11 +13,17 @@
 @end
 
 @implementation MapTableViewController
-
+- (UIBarPosition)positionForBar:(id <UIBarPositioning>)bar
+{
+    return UIBarPositionTopAttached;
+}
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     
-    NSLog(@"Prepare for Segue, %@", [segue destinationViewController]);
+    NSLog(@"%@ Prepare for Segue, %@", [segue sourceViewController],[segue destinationViewController]);
 
 }
 
@@ -43,7 +49,12 @@
         tap.numberOfTapsRequired = 1;
         [self.view addGestureRecognizer:tap];
 
+    // Set the side bar button action. When it's tapped, it'll show up the sidebar.
+    _sidebarButton.target = self.revealViewController;
+    _sidebarButton.action = @selector(revealToggle:);
     
+    // Set the gesture
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 }
 
 - (void)didReceiveMemoryWarning
@@ -62,7 +73,7 @@
         [self hidesBottomBarWhenPushed];
     }
     else {
-        [self performSegueWithIdentifier:@"ToTableView" sender:self];
+        [self performSegueWithIdentifier:@"PartyDetailsSegue" sender:self];
     }
 }
 
@@ -79,7 +90,12 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PartyLocation"];
+    static NSString *CellIdentifier = @"PartyLocationCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] init];
+    }
+    
     return cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -129,6 +145,13 @@
     // the simplest of which is to just add a couple of extra points to height and return that slightly larger value.
     return 60.0f;
 }
+
+
+//UIScrollViewDelegate methods
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{}
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{}
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{}
+
 
 
 @end

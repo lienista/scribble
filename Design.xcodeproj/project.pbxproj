@@ -26,6 +26,25 @@
 		FC4C850D187027ED00577DCE /* homeNavBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C850B187027ED00577DCE /* homeNavBar@2x.png */; };
 		FC4C851418702AC200577DCE /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C851218702AC200577DCE /* menu.png */; };
 		FC4C851518702AC200577DCE /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C851318702AC200577DCE /* menu@2x.png */; };
+		FC4C852818710DEE00577DCE /* messagesC@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C851618710DEE00577DCE /* messagesC@2x.png */; };
+		FC4C852918710DEE00577DCE /* messagesC.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C851718710DEE00577DCE /* messagesC.png */; };
+		FC4C852A18710DEE00577DCE /* bookmarkC.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C851818710DEE00577DCE /* bookmarkC.png */; };
+		FC4C852B18710DEE00577DCE /* bookmarkC@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C851918710DEE00577DCE /* bookmarkC@2x.png */; };
+		FC4C852C18710DEE00577DCE /* neighborsC.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C851A18710DEE00577DCE /* neighborsC.png */; };
+		FC4C852D18710DEE00577DCE /* neighborsC@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C851B18710DEE00577DCE /* neighborsC@2x.png */; };
+		FC4C852E18710DEE00577DCE /* calendarC.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C851C18710DEE00577DCE /* calendarC.png */; };
+		FC4C852F18710DEE00577DCE /* calendarC@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C851D18710DEE00577DCE /* calendarC@2x.png */; };
+		FC4C853018710DEE00577DCE /* compassC.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C851E18710DEE00577DCE /* compassC.png */; };
+		FC4C853118710DEE00577DCE /* compassC@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C851F18710DEE00577DCE /* compassC@2x.png */; };
+		FC4C853218710DEE00577DCE /* hatC.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C852018710DEE00577DCE /* hatC.png */; };
+		FC4C853318710DEE00577DCE /* hatC@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C852118710DEE00577DCE /* hatC@2x.png */; };
+		FC4C853418710DEE00577DCE /* homeC.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C852218710DEE00577DCE /* homeC.png */; };
+		FC4C853518710DEE00577DCE /* homec@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C852318710DEE00577DCE /* homec@2x.png */; };
+		FC4C853618710DEE00577DCE /* nowC.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C852418710DEE00577DCE /* nowC.png */; };
+		FC4C853718710DEE00577DCE /* nowC@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C852518710DEE00577DCE /* nowC@2x.png */; };
+		FC4C853818710DEE00577DCE /* settingsC.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C852618710DEE00577DCE /* settingsC.png */; };
+		FC4C853918710DEE00577DCE /* settingsC@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC4C852718710DEE00577DCE /* settingsC@2x.png */; };
+		FC4C853F187112AE00577DCE /* NowTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4C853E187112AE00577DCE /* NowTableViewController.m */; };
 		FC7EFDAE18621FFF0095FF09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7EFDAD18621FFF0095FF09 /* Foundation.framework */; };
 		FC7EFDB018621FFF0095FF09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7EFDAF18621FFF0095FF09 /* CoreGraphics.framework */; };
 		FC7EFDB218621FFF0095FF09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7EFDB118621FFF0095FF09 /* UIKit.framework */; };
@@ -78,6 +97,7 @@
 		FC98A88F1865128400B4825C /* heart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98A88D1865128400B4825C /* heart@2x.png */; };
 		FC98A91918665E2000B4825C /* Lobster.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC98A91818665E0200B4825C /* Lobster.otf */; };
 		FC98A91A18665E2900B4825C /* League_Gothic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC98A91718665DB800B4825C /* League_Gothic.otf */; };
+		FCB3EA3C1871537000769A12 /* PartyDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB3EA3B1871537000769A12 /* PartyDetailsViewController.m */; };
 		FCB6DA6E1867B90D00240715 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB6DA6D1867B90D00240715 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +139,26 @@
 		FC4C850B187027ED00577DCE /* homeNavBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homeNavBar@2x.png"; sourceTree = "<group>"; };
 		FC4C851218702AC200577DCE /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		FC4C851318702AC200577DCE /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		FC4C851618710DEE00577DCE /* messagesC@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messagesC@2x.png"; sourceTree = "<group>"; };
+		FC4C851718710DEE00577DCE /* messagesC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messagesC.png; sourceTree = "<group>"; };
+		FC4C851818710DEE00577DCE /* bookmarkC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmarkC.png; sourceTree = "<group>"; };
+		FC4C851918710DEE00577DCE /* bookmarkC@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bookmarkC@2x.png"; sourceTree = "<group>"; };
+		FC4C851A18710DEE00577DCE /* neighborsC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = neighborsC.png; sourceTree = "<group>"; };
+		FC4C851B18710DEE00577DCE /* neighborsC@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "neighborsC@2x.png"; sourceTree = "<group>"; };
+		FC4C851C18710DEE00577DCE /* calendarC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendarC.png; sourceTree = "<group>"; };
+		FC4C851D18710DEE00577DCE /* calendarC@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendarC@2x.png"; sourceTree = "<group>"; };
+		FC4C851E18710DEE00577DCE /* compassC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compassC.png; sourceTree = "<group>"; };
+		FC4C851F18710DEE00577DCE /* compassC@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compassC@2x.png"; sourceTree = "<group>"; };
+		FC4C852018710DEE00577DCE /* hatC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hatC.png; sourceTree = "<group>"; };
+		FC4C852118710DEE00577DCE /* hatC@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hatC@2x.png"; sourceTree = "<group>"; };
+		FC4C852218710DEE00577DCE /* homeC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeC.png; sourceTree = "<group>"; };
+		FC4C852318710DEE00577DCE /* homec@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homec@2x.png"; sourceTree = "<group>"; };
+		FC4C852418710DEE00577DCE /* nowC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nowC.png; sourceTree = "<group>"; };
+		FC4C852518710DEE00577DCE /* nowC@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nowC@2x.png"; sourceTree = "<group>"; };
+		FC4C852618710DEE00577DCE /* settingsC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingsC.png; sourceTree = "<group>"; };
+		FC4C852718710DEE00577DCE /* settingsC@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settingsC@2x.png"; sourceTree = "<group>"; };
+		FC4C853D187112AE00577DCE /* NowTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NowTableViewController.h; sourceTree = "<group>"; };
+		FC4C853E187112AE00577DCE /* NowTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NowTableViewController.m; sourceTree = "<group>"; };
 		FC7EFDAA18621FFF0095FF09 /* Design.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Design.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7EFDAD18621FFF0095FF09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FC7EFDAF18621FFF0095FF09 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -182,6 +222,8 @@
 		FC98A88D1865128400B4825C /* heart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart@2x.png"; sourceTree = "<group>"; };
 		FC98A91718665DB800B4825C /* League_Gothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = League_Gothic.otf; sourceTree = "<group>"; };
 		FC98A91818665E0200B4825C /* Lobster.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lobster.otf; sourceTree = "<group>"; };
+		FCB3EA3A1871537000769A12 /* PartyDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartyDetailsViewController.h; sourceTree = "<group>"; };
+		FCB3EA3B1871537000769A12 /* PartyDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartyDetailsViewController.m; sourceTree = "<group>"; };
 		FCB6DA6D1867B90D00240715 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -223,6 +265,8 @@
 		FC4C84FA1870101800577DCE /* Intro */ = {
 			isa = PBXGroup;
 			children = (
+				FC7EFDC218621FFF0095FF09 /* ViewController.h */,
+				FC7EFDC318621FFF0095FF09 /* ViewController.m */,
 				FC7EFDFC1862875D0095FF09 /* SignupViewController.h */,
 				FC7EFDFD1862875D0095FF09 /* SignupViewController.m */,
 				FC7EFDF9186287420095FF09 /* LoginViewController.h */,
@@ -236,8 +280,16 @@
 		FC4C84FE1870105E00577DCE /* Sidebar */ = {
 			isa = PBXGroup;
 			children = (
+				FCB3EA3A1871537000769A12 /* PartyDetailsViewController.h */,
+				FCB3EA3B1871537000769A12 /* PartyDetailsViewController.m */,
+				FC4C853D187112AE00577DCE /* NowTableViewController.h */,
+				FC4C853E187112AE00577DCE /* NowTableViewController.m */,
 				FC4C84EE186EE5E600577DCE /* NeighborTableViewController.h */,
 				FC4C84EF186EE5E700577DCE /* NeighborTableViewController.m */,
+				FC0C7B651867FB9300C87743 /* MapViewController.h */,
+				FC0C7B661867FB9300C87743 /* MapViewController.m */,
+				FC0C7B621867FB7100C87743 /* MapTableViewController.h */,
+				FC0C7B631867FB7100C87743 /* MapTableViewController.m */,
 				FC4C84FF187010DD00577DCE /* MainViewController.h */,
 				FC4C8500187010DD00577DCE /* MainViewController.m */,
 				FC4C84FB1870104B00577DCE /* SidebarViewController.h */,
@@ -284,22 +336,16 @@
 				FC7EFDBC18621FFF0095FF09 /* AppDelegate.h */,
 				FC7EFDBD18621FFF0095FF09 /* AppDelegate.m */,
 				FC7EFDBF18621FFF0095FF09 /* Main.storyboard */,
-				FC7EFDC218621FFF0095FF09 /* ViewController.h */,
-				FC7EFDC318621FFF0095FF09 /* ViewController.m */,
 				FC0C7BB11869749800C87743 /* MapTableViewCell.h */,
 				FC0C7BB21869749800C87743 /* MapTableViewCell.m */,
-				FC0C7B651867FB9300C87743 /* MapViewController.h */,
-				FC0C7B661867FB9300C87743 /* MapViewController.m */,
-				FC4C84EB186D742E00577DCE /* MapTableDetailsViewController.h */,
-				FC4C84EC186D742E00577DCE /* MapTableDetailsViewController.m */,
-				FC0C7B621867FB7100C87743 /* MapTableViewController.h */,
-				FC0C7B631867FB7100C87743 /* MapTableViewController.m */,
 				FC7EFE2218639AD80095FF09 /* MyNavigationController.h */,
 				FC7EFE2318639AD80095FF09 /* MyNavigationController.m */,
 				FC7EFE1C1863871A0095FF09 /* TabViewController.h */,
 				FC7EFE1D1863871A0095FF09 /* TabViewController.m */,
 				FC7EFE1F18639A080095FF09 /* MyTabBarController.h */,
 				FC7EFE2018639A080095FF09 /* MyTabBarController.m */,
+				FC4C84EB186D742E00577DCE /* MapTableDetailsViewController.h */,
+				FC4C84EC186D742E00577DCE /* MapTableDetailsViewController.m */,
 				FC4C84FE1870105E00577DCE /* Sidebar */,
 				FC4C84FA1870101800577DCE /* Intro */,
 				FC4C84F618700F6000577DCE /* Library */,
@@ -344,6 +390,24 @@
 		FC7EFE2518650C8B0095FF09 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				FC4C851618710DEE00577DCE /* messagesC@2x.png */,
+				FC4C851718710DEE00577DCE /* messagesC.png */,
+				FC4C851818710DEE00577DCE /* bookmarkC.png */,
+				FC4C851918710DEE00577DCE /* bookmarkC@2x.png */,
+				FC4C851A18710DEE00577DCE /* neighborsC.png */,
+				FC4C851B18710DEE00577DCE /* neighborsC@2x.png */,
+				FC4C851C18710DEE00577DCE /* calendarC.png */,
+				FC4C851D18710DEE00577DCE /* calendarC@2x.png */,
+				FC4C851E18710DEE00577DCE /* compassC.png */,
+				FC4C851F18710DEE00577DCE /* compassC@2x.png */,
+				FC4C852018710DEE00577DCE /* hatC.png */,
+				FC4C852118710DEE00577DCE /* hatC@2x.png */,
+				FC4C852218710DEE00577DCE /* homeC.png */,
+				FC4C852318710DEE00577DCE /* homec@2x.png */,
+				FC4C852418710DEE00577DCE /* nowC.png */,
+				FC4C852518710DEE00577DCE /* nowC@2x.png */,
+				FC4C852618710DEE00577DCE /* settingsC.png */,
+				FC4C852718710DEE00577DCE /* settingsC@2x.png */,
 				FC4C8502187015A400577DCE /* homeTop@2x.png */,
 				FC4C8503187015A400577DCE /* homeTop.png */,
 				FC98A86018650F8D00B4825C /* world@2x.png */,
@@ -483,35 +547,52 @@
 				FC98A87B18650F8E00B4825C /* people.png in Resources */,
 				FC98A88B1865127800B4825C /* calendar@2x.png in Resources */,
 				FC7EFDF8186224C90095FF09 /* salad3.jpg in Resources */,
+				FC4C852B18710DEE00577DCE /* bookmarkC@2x.png in Resources */,
 				FC0C7BB7186B8DDF00C87743 /* mylocation.png in Resources */,
 				FC98A87C18650F8E00B4825C /* info@2x.png in Resources */,
+				FC4C853318710DEE00577DCE /* hatC@2x.png in Resources */,
+				FC4C852F18710DEE00577DCE /* calendarC@2x.png in Resources */,
+				FC4C853818710DEE00577DCE /* settingsC.png in Resources */,
 				FC98A87818650F8E00B4825C /* placemark@2x.png in Resources */,
+				FC4C852918710DEE00577DCE /* messagesC.png in Resources */,
 				FC98A87518650F8E00B4825C /* world.png in Resources */,
 				FC7EFDF5186224C90095FF09 /* potatoes.jpg in Resources */,
 				FC4C851418702AC200577DCE /* menu.png in Resources */,
+				FC4C853518710DEE00577DCE /* homec@2x.png in Resources */,
 				FC98A87718650F8E00B4825C /* settings.png in Resources */,
+				FC4C852818710DEE00577DCE /* messagesC@2x.png in Resources */,
+				FC4C852E18710DEE00577DCE /* calendarC.png in Resources */,
 				FC98A88A1865127800B4825C /* calendar.png in Resources */,
 				FC4C850D187027ED00577DCE /* homeNavBar@2x.png in Resources */,
 				FC0C7BB6186B8DDF00C87743 /* mylocation@2x.png in Resources */,
 				FC7EFDF3186224C90095FF09 /* mocha.jpg in Resources */,
+				FC4C853918710DEE00577DCE /* settingsC@2x.png in Resources */,
+				FC4C853418710DEE00577DCE /* homeC.png in Resources */,
+				FC4C852C18710DEE00577DCE /* neighborsC.png in Resources */,
 				FC98A88718650F8E00B4825C /* dollar.png in Resources */,
 				FC4C8505187015A400577DCE /* homeTop.png in Resources */,
 				FC98A88618650F8E00B4825C /* dollar@2x.png in Resources */,
+				FC4C853618710DEE00577DCE /* nowC.png in Resources */,
 				FC7EFDF2186224C90095FF09 /* coffee.jpg in Resources */,
 				FC98A87918650F8E00B4825C /* placemark.png in Resources */,
 				FC7EFDF6186224C90095FF09 /* salad.jpg in Resources */,
 				FC98A91A18665E2900B4825C /* League_Gothic.otf in Resources */,
+				FC4C853218710DEE00577DCE /* hatC.png in Resources */,
 				FC7EFDC618621FFF0095FF09 /* Images.xcassets in Resources */,
 				FC4C851518702AC200577DCE /* menu@2x.png in Resources */,
+				FC4C852A18710DEE00577DCE /* bookmarkC.png in Resources */,
 				FC0C7BBB186B8E8000C87743 /* messages.png in Resources */,
 				FC98A88E1865128400B4825C /* heart.png in Resources */,
 				FC7EFDF0186224C90095FF09 /* carrotjuice.jpg in Resources */,
+				FC4C853718710DEE00577DCE /* nowC@2x.png in Resources */,
 				FC7EFDB818621FFF0095FF09 /* InfoPlist.strings in Resources */,
+				FC4C853018710DEE00577DCE /* compassC.png in Resources */,
 				FC4C8504187015A400577DCE /* homeTop@2x.png in Resources */,
 				FC7EFDF1186224C90095FF09 /* cheeseplate.jpg in Resources */,
 				FC4C850C187027ED00577DCE /* homeNavBar.png in Resources */,
 				FC7EFDF7186224C90095FF09 /* salad2.jpg in Resources */,
 				FC98A87F18650F8E00B4825C /* home.png in Resources */,
+				FC4C853118710DEE00577DCE /* compassC@2x.png in Resources */,
 				FC7EFDEF186224C90095FF09 /* bread.jpg in Resources */,
 				FC98A87E18650F8E00B4825C /* home@2x.png in Resources */,
 				FC98A88F1865128400B4825C /* heart@2x.png in Resources */,
@@ -522,6 +603,7 @@
 				FC98A88118650F8E00B4825C /* holler.png in Resources */,
 				FC98A87618650F8E00B4825C /* settings@2x.png in Resources */,
 				FC98A87D18650F8E00B4825C /* info.png in Resources */,
+				FC4C852D18710DEE00577DCE /* neighborsC@2x.png in Resources */,
 				FC7EFDF4186224C90095FF09 /* pomegranate.jpg in Resources */,
 				FC98A88018650F8E00B4825C /* holler@2x.png in Resources */,
 				FC98A87418650F8E00B4825C /* world@2x.png in Resources */,
@@ -551,11 +633,13 @@
 				FC7EFDE4186222A80095FF09 /* PageContentViewController.m in Sources */,
 				FC7EFE2418639AD80095FF09 /* MyNavigationController.m in Sources */,
 				FC4C8501187010DD00577DCE /* MainViewController.m in Sources */,
+				FC4C853F187112AE00577DCE /* NowTableViewController.m in Sources */,
 				FC7EFDBE18621FFF0095FF09 /* AppDelegate.m in Sources */,
 				FC4C84ED186D742E00577DCE /* MapTableDetailsViewController.m in Sources */,
 				FC0C7BB31869749800C87743 /* MapTableViewCell.m in Sources */,
 				FC7EFDBA18621FFF0095FF09 /* main.m in Sources */,
 				FC4C84FD1870104B00577DCE /* SidebarViewController.m in Sources */,
+				FCB3EA3C1871537000769A12 /* PartyDetailsViewController.m in Sources */,
 				FC7EFE2118639A080095FF09 /* MyTabBarController.m in Sources */,
 				FC7EFE1E1863871A0095FF09 /* TabViewController.m in Sources */,
 				FC7EFDFB186287420095FF09 /* LoginViewController.m in Sources */,

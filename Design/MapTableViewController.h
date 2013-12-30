@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "MapViewController.h"
-//#import "MapTableViewCell.h"
+#import "SWRevealViewController.h"
 
-@interface MapTableViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface MapTableViewController : UIViewController <UIScrollViewDelegate,CLLocationManagerDelegate, MKMapViewDelegate, UITableViewDelegate, UITableViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 
 
 

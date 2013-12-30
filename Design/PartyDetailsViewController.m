@@ -1,18 +1,18 @@
 //
-//  MapTableDetailsViewController.m
+//  PartyDetailsViewController.m
 //  Design
 //
-//  Created by Lienne Nguyen on 12/27/13.
+//  Created by Lienne Nguyen on 12/29/13.
 //  Copyright (c) 2013 Lienne Nguyen. All rights reserved.
 //
 
-#import "MapTableDetailsViewController.h"
+#import "PartyDetailsViewController.h"
 
-@interface MapTableDetailsViewController ()
+@interface PartyDetailsViewController ()
 
 @end
 
-@implementation MapTableDetailsViewController
+@implementation PartyDetailsViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -32,10 +32,6 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-   //[self setCustomStyle];
-
-
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,15 +53,16 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 1;
+    return 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"PartyDetailsCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
+    static NSString *CellIdentifier = @"OnePartyDetailsCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] init];
+    }
     
     return cell;
 }
@@ -109,38 +106,16 @@
 }
 */
 
-
+/*
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    NSLog(@"prepare for segue");
-//    NSLog(@"segue identifier %@", [segue identifier]);
-//    if([segue.identifier isEqualToString:@"ToTableView"]) {
-//        NSLog(@"destination view controller %@", [segue destinationViewController]);
-//        NSLog(@"source view controller %@", [segue sourceViewController]);
-//
-//    }
-//}
-
-
-
-- (IBAction)back:(id)sender{
-    [self.navigationController popViewControllerAnimated:YES];
-    
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
 }
 
--(void) viewDidAppear:(BOOL)animated {
-    
-    NSLog(@"View DID Appear");
-    
-    
-}
-
-
--(void) viewWillAppear:(BOOL)animated {
-    NSLog(@"View Will Appear");
-}
+ */
 
 @end

@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MapViewProtocol.h"
-
+#import "SWRevealViewController.h"
 
 @interface MapViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate, UINavigationBarDelegate, UIBarPositioningDelegate>
 
@@ -28,5 +27,6 @@
 - (IBAction)changeMapType:(id)sender;
 - (IBAction)resetDistance:(id)sender;
 - (IBAction)back:(id)sender;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 
 @end

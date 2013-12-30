@@ -20,17 +20,18 @@
     pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
     pageControl.currentPageIndicatorTintColor = [UIColor darkGrayColor];
     pageControl.backgroundColor = [UIColor clearColor];
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    //[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    for (NSString* family in [UIFont familyNames])
-    {
-        NSLog(@"%@", family);
-        
-        for (NSString* name in [UIFont fontNamesForFamilyName: family])
-        {
-            NSLog(@"  %@", name);
-        }
-    }
+    
+//    for (NSString* family in [UIFont familyNames])
+//    {
+//        NSLog(@"%@", family);
+//        
+//        for (NSString* name in [UIFont fontNamesForFamilyName: family])
+//        {
+//            NSLog(@"  %@", name);
+//        }
+//    }
     
     [self setCustomStyle];
     return YES;
@@ -70,15 +71,15 @@
 }
 
 - (void) setCustomStyle {
-    self.window.tintColor = UIColorFromRGB(0x495EFC,0.2);
-    UIColor *barColor = UIColorFromRGB(0x495EFC,0.5);
+    //self.window.tintColor = UIColorFromRGB(0x1A42E8,1);
+    UIColor *barColor = UIColorFromRGB(0x1A42E8,0.8);
     
-    UIView *colorView = [[UIView alloc] initWithFrame:CGRectMake(0.f, -20.f, 320.f, 64.f)];
+    UIView *colorView = [[UIView alloc] initWithFrame:CGRectMake(0.f, -22.f, 320.f, 64.f)];
     colorView.opaque = NO;
     colorView.alpha = .5f;
     colorView.backgroundColor = barColor;
     
-     UIFont* font = [UIFont fontWithName:@"LeagueGothic" size:32.0f];
+    UIFont* font = [UIFont fontWithName:@"LeagueGothic" size:32.0f];
     
     UIColor* textColor = [UIColor whiteColor];
     NSDictionary *barTitleAttributes = @{ NSForegroundColorAttributeName : textColor,
@@ -103,8 +104,6 @@
     NSDictionary *highlightedAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
     [[UISegmentedControl appearance] setTitleTextAttributes:highlightedAttributes forState:UIControlStateSelected];
 
-
-
 }
 
 - (UIBarPosition)positionForBar:(id <UIBarPositioning>)bar
@@ -114,5 +113,6 @@
 -(UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
 }
+
 
 @end

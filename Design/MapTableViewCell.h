@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface MapTableViewCell : UITableViewCell
 
 @property (strong, nonatomic) UILabel *partyTitleLabel;

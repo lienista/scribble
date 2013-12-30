@@ -1,5 +1,5 @@
 //
-//  MainViewController.h
+//  NowTableViewController.h
 //  Design
 //
 //  Created by Lienne Nguyen on 12/29/13.
@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "SWRevealViewController.h"
 
-@interface MainViewController : UIViewController
+@interface NowTableViewController : UITableViewController
+
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 
 @end
