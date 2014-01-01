@@ -10,11 +10,14 @@
 
 @implementation MyNavigationController
 
-//- (UIStatusBarStyle)preferredStatusBarStyle
-//{
-//    return UIStatusBarStyleLightContent;
-//    
-//}
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+- (UIViewController *)childViewControllerForStatusBarStyle
+{
+    return nil;
+}
 
 - (void) viewDidLoad
 
@@ -31,30 +34,30 @@
     
     //[self setCustomStyle];
 }
-- (void) setCustomStyle {
-    //UIColor *barColour = [UIColor colorWithRed:73.0/255.0f green:94.0/255.0f blue:252.0/255.0f alpha:1.00f];
-    //[[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x067AB5)];
-    
-    UIColor *barColor = UIColorFromRGB(0x495EFC,0.5);
-    
-    UIView *colorView = [[UIView alloc] initWithFrame:CGRectMake(0.f, -20.f, 320.f, 64.f)];
-    colorView.opaque = NO;
-    colorView.alpha = .5f;
-    colorView.backgroundColor = barColor;
-    
-    self.navigationController.navigationBar.barTintColor = barColor;
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
-    
-    /*self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
-     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
-     self.navigationController.navigationBar.translucent = NO;*/
-    
-    [self.navigationController.navigationBar.layer insertSublayer:colorView.layer atIndex:0];
-    
-    
-}
+//- (void) setCustomStyle {
+//    //UIColor *barColour = [UIColor colorWithRed:73.0/255.0f green:94.0/255.0f blue:252.0/255.0f alpha:1.00f];
+//    //[[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x067AB5)];
+//    
+//    UIColor *barColor = UIColorFromRGB(0x495EFC,0.5);
+//    
+//    UIView *colorView = [[UIView alloc] initWithFrame:CGRectMake(0.f, -20.f, 320.f, 64.f)];
+//    colorView.opaque = NO;
+//    colorView.alpha = .5f;
+//    colorView.backgroundColor = barColor;
+//    
+//    self.navigationController.navigationBar.barTintColor = barColor;
+//    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+//    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+//    
+//    /*self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
+//     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+//     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+//     self.navigationController.navigationBar.translucent = NO;*/
+//    
+//    [self.navigationController.navigationBar.layer insertSublayer:colorView.layer atIndex:0];
+//    
+//    
+//}
 
 
 

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MyTabBarController : UITabBarController
-
+@property (weak, nonatomic) UIBarButtonItem *leftsidebarButton;
+@property (weak, nonatomic) UIBarButtonItem *rightsidebarButton;
 @end

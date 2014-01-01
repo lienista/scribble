@@ -11,14 +11,25 @@
 
 @implementation MyTabBarController
 
-- (UIStatusBarStyle)preferredStatusBarStyle
+-(void) customizeNavigationBar
 {
-    return UIStatusBarStyleLightContent;
-}
-- (UIViewController *)childViewControllerForStatusBarStyle
-{
-    return nil;
+    UIBarButtonItem *leftsidebarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu.png"] style:UIBarButtonItemStylePlain target:self.revealViewController action:@selector(revealToggle:)];
+        UIBarButtonItem *rightsidebarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"settings.png"] style:UIBarButtonItemStylePlain target:self.revealViewController action:@selector(revealToggle:)];
+
+    self.navigationItem.leftBarButtonItem = leftsidebarButton;
+    self.navigationItem.rightBarButtonItem = rightsidebarButton;
 }
 
+-(void) viewDidLoad
+{
+    [self customizeNavigationBar];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    if(animated==YES) {
+        [self customizeNavigationBar];
+    }
+}
 
 @end

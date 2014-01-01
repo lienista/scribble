@@ -290,8 +290,6 @@
 				FC0C7B661867FB9300C87743 /* MapViewController.m */,
 				FC0C7B621867FB7100C87743 /* MapTableViewController.h */,
 				FC0C7B631867FB7100C87743 /* MapTableViewController.m */,
-				FC4C84FF187010DD00577DCE /* MainViewController.h */,
-				FC4C8500187010DD00577DCE /* MainViewController.m */,
 				FC4C84FB1870104B00577DCE /* SidebarViewController.h */,
 				FC4C84FC1870104B00577DCE /* SidebarViewController.m */,
 			);
@@ -346,6 +344,8 @@
 				FC7EFE2018639A080095FF09 /* MyTabBarController.m */,
 				FC4C84EB186D742E00577DCE /* MapTableDetailsViewController.h */,
 				FC4C84EC186D742E00577DCE /* MapTableDetailsViewController.m */,
+				FC4C84FF187010DD00577DCE /* MainViewController.h */,
+				FC4C8500187010DD00577DCE /* MainViewController.m */,
 				FC4C84FE1870105E00577DCE /* Sidebar */,
 				FC4C84FA1870101800577DCE /* Intro */,
 				FC4C84F618700F6000577DCE /* Library */,
