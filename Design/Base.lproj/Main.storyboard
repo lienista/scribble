@@ -63,7 +63,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placemark.png" translatesAutoresizingMaskIntoConstraints="NO" id="cEn-iU-pPc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="salad3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cEn-iU-pPc">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1459,6 +1459,7 @@
         <image name="people.png" width="31" height="31"/>
         <image name="placemark.png" width="31" height="31"/>
         <image name="pomegranate.jpg" width="320" height="568"/>
+        <image name="salad3.jpg" width="320" height="568"/>
         <image name="settings.png" width="23" height="23"/>
         <image name="settingsC.png" width="31" height="31"/>
         <image name="world.png" width="31" height="31"/>
